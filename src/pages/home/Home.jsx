@@ -37,7 +37,6 @@ function Home() {
         <h2>One</h2>
         <p>Choose your car</p>
       </div>
-
       
     </div>
     <div className="booking">

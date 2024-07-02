@@ -110,13 +110,17 @@ img{
 
 
 .book{
-    display: flex;
+    display: grid;
+    place-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     border: solid red 2px;
+    
 }
 
-.booking{
-   height: 40%;
-}
+
 .booking-content {
     display: flex;
     flex-direction: column;
@@ -126,13 +130,12 @@ img{
     background-color: #071952;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* max-width: 300px; */
     text-align: center;
   }
   
   .booking-content .icon {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     background-color: white;
     border-radius: 50%;
     display: flex;
@@ -142,7 +145,11 @@ img{
     color: black;
     
   }
-  
+  .booking-content .icon i{
+    font-size: 40px;
+
+  }
+
   .booking-content h2 {
     font-size: 1.5em;
     margin: 10px 0;
