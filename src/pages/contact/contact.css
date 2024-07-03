@@ -20,7 +20,7 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 50px;
-  background-color: #EBF4F6;
+  background-color: #ebf4f6;
 }
 
 .section1-header1 {
@@ -39,7 +39,7 @@
   color: #686d76;
 }
 
-.available{
+.available {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -47,10 +47,7 @@
   margin-bottom: 50px;
   align-items: center;
   color: #088395;
-  
 }
-
-
 
 .row {
   display: flex;
@@ -80,7 +77,6 @@
   font-size: 30px;
   line-height: 70px;
   color: #071952;
-  
 }
 
 .contact-info-content {
@@ -144,7 +140,7 @@
 
 .contact-form .input-box input:focus ~ span,
 .contact-form .input-box textarea:focus ~ span {
- color:white;
+  color: white;
   font-size: 12px;
   transform: translateY(-20px);
 }
@@ -163,7 +159,7 @@
 
 .contact-form .input-box input[type="submit"]:hover {
   background: #088395;
-  color:white;
+  color: white;
 }
 
 .contact-map {
@@ -175,15 +171,15 @@
   border: 1px solid #333;
   border-width: 65%;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0);
 }
 
 .contact-map iframe {
   width: 65%;
   height: 300px;
   border: none;
- border-radius: 10px;
- }
+  border-radius: 10px;
+}
 
 @media (max-width: 991px) {
   .section1 {
