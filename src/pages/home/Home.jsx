@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom'
 import "./home.css"
 import home from '../../assets/home.jpg'
 import { FaCar } from "react-icons/fa";
+import { MdPayment } from "react-icons/md";
+import { LuBookMinus } from "react-icons/lu";
+import doe from '../../assets/doe.jpg'
 
 function Home() {
   return (
@@ -24,7 +27,7 @@ function Home() {
   </div>
   <div className="section1">
       <div className="section-content1">
-      <h3>Booking a car is so simple follow the steps bellow</h3>
+      <h2>Booking a car is so simple follow the steps bellow</h2>
       </div>
     </div>
     <div className="book">
@@ -42,11 +45,11 @@ function Home() {
     <div className="booking">
       <div className="booking-content">
         <div className="icon">
-          <i className="fas fa-car"> <FaCar /></i>
+          <i className="fas fa-car"> <LuBookMinus /></i>
         </div>
         
-        <h2>One</h2>
-        <p>Choose your car</p>
+        <h2>Two</h2>
+        <p>Enquire</p>
       </div>
 
       
@@ -54,15 +57,63 @@ function Home() {
     <div className="booking">
       <div className="booking-content">
         <div className="icon">
-          <i className="fas fa-car"> <FaCar /></i>
+          <i className="fas fa-car"> <MdPayment /></i>
         </div>
         
-        <h2>One</h2>
-        <p>Choose your car</p>
+        <h2>Three</h2>
+        <p>Pay</p>
       </div>
 
       
     </div>
+    </div>
+    <div className="testimonials">
+      <h2>Testimonials</h2>
+      <div className="testimony">
+      <div className="testimonials-content">
+        <div className="testimonial">
+          <div className="testimonial-content">
+            <p>Great service, great car, great price. I will definitely be using them again
+              </p>
+              <div className="testimonial-author">
+                <div className="author-image"><img src={doe} alt
+                /></div>
+                <h4>John Doe</h4>
+                <p>Customer</p>
+                </div> 
+                </div>
+          </div>
+      </div>
+
+      <div className="testimonials-content">
+        <div className="testimonial">
+          <div className="testimonial-content">
+            <p>Great service, great car, great price. I will definitely be using them again
+              </p>
+              <div className="testimonial-author">
+                <div className="author-image"><img src={doe} alt
+                /></div>
+                <h4>John Doe</h4>
+                <p>Customer</p>
+                </div> 
+                </div>
+          </div>
+      </div>
+      <div className="testimonials-content">
+        <div className="testimonial">
+          <div className="testimonial-content">
+            <p>Great service, great car, great price. I will definitely be using them again
+              </p>
+              <div className="testimonial-author">
+                <div className="author-image"><img src={doe} alt
+                /></div>
+                <h4>John Doe</h4>
+                <p>Customer</p>
+                </div> 
+                </div>
+          </div>
+      </div>
+      </div>
     </div>
   </section>
 

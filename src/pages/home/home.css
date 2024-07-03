@@ -129,8 +129,8 @@ img{
     margin: 20px;
     background-color: #071952;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    color: #fff;
   }
   
   .booking-content .icon {
@@ -146,7 +146,7 @@ img{
     
   }
   .booking-content .icon i{
-    font-size: 40px;
+    font-size: 50px;
 
   }
 
@@ -160,3 +160,97 @@ img{
     margin: 0;
   }
   
+ .testimony{
+    display: flex;
+    gap: 2rem;
+ }
+ .testimony .testimony-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    }
+  .testimonials h2 {
+    font-size: 2.5em;
+    color: #071952;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    display: grid;
+    place-content: center;
+  }
+  
+  .testimonials h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #6e8efb;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .testimonials-content {
+    padding: 40px 20px;
+    background-color: #071952;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    padding: 30px;
+    margin: 10px;
+    border-radius: 10px;
+    color: #fff;
+    max-width: 700px;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .testimonial-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .author-image img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial-author h4 {
+    font-size: 1.3em;
+    margin: 0;
+  }
+  
+  .testimonial-author p {
+    font-size: 0.95em;
+    margin: 0;
+  }
+
