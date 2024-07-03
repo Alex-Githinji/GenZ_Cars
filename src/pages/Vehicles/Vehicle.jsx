@@ -11,6 +11,7 @@ export const Vehicle =({
 
 }) =>{
   return (
+
     <div className="vehicle-card">
         <div className="image">
          <img src={image} alt="" />
@@ -21,7 +22,7 @@ export const Vehicle =({
             <h2>{type}</h2>
             <h3>{model}</h3>
             </div>
-            <p className='available'>Availble</p>
+            
             <p>{description}</p>
             <p className='vehicle-price'>{price}</p>
          <button className='vehicle-button'>book</button>

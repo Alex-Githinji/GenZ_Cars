@@ -15,6 +15,9 @@ function Header() {
             <Link to="/vehicles">Vehicles</Link>
           </li>
           <li className="navbar-item">
+            <Link to="/Booking">Booking</Link>
+          </li>
+          <li className="navbar-item">
             <Link to="/contact">Contact</Link>
           </li>
         </ul>
