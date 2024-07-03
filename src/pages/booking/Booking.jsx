@@ -1,18 +1,19 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import "./booking.css"
-import { Formik, Form, Field,ErrorMessage } from 'formik'
-import * as Yup from 'yup'
-
+import React from "react";
+import { Link } from "react-router-dom";
+import "./booking.css";
+import { Formik, Form, Field, ErrorMessage } from "formik";
+import * as Yup from "yup";
 
 const Bookingschema = Yup.object().shape({
-    vehicle: Yup.string().required('Please select a vehicle'),
-    pickUpDate: Yup.date().required('Please select a pick-up date'),
-    dropOffDate: Yup.date().required('Please select a drop-off date'),
-    name: Yup.string().required('Please enter your name'),
-    email: Yup.string().email('Invalid email').required('Please enter your email'),
-    phone: Yup.string().required('Please enter your phone number'),
-})
+  vehicle: Yup.string().required("Please select a vehicle"),
+  pickUpDate: Yup.date().required("Please select a pick-up date"),
+  dropOffDate: Yup.date().required("Please select a drop-off date"),
+  name: Yup.string().required("Please enter your name"),
+  email: Yup.string()
+    .email("Invalid email")
+    .required("Please enter your email"),
+  phone: Yup.string().required("Please enter your phone number"),
+});
 
 const Booking = () => {
   return (
@@ -20,12 +21,12 @@ const Booking = () => {
       <h2>Book a Vehicle</h2>
       <Formik
         initialValues={{
-          vehicle: '',
-          pickUpDate: '',
-          dropOffDate: '',
-          name: '',
-          email: '',
-          phone: '',
+          vehicle: "",
+          pickUpDate: "",
+          dropOffDate: "",
+          name: "",
+          email: "",
+          phone: "",
         }}
         Bookingschema={Bookingschema}
         onSubmit={(values, { setSubmitting }) => {
@@ -52,13 +53,21 @@ const Booking = () => {
             <div className="form-group">
               <label htmlFor="pickUpDate">Pick-Up Date</label>
               <Field type="date" name="pickUpDate" />
-              <ErrorMessage name="pickUpDate" component="div" className="error" />
+              <ErrorMessage
+                name="pickUpDate"
+                component="div"
+                className="error"
+              />
             </div>
 
             <div className="form-group">
               <label htmlFor="dropOffDate">Drop-Off Date</label>
               <Field type="date" name="dropOffDate" />
-              <ErrorMessage name="dropOffDate" component="div" className="error" />
+              <ErrorMessage
+                name="dropOffDate"
+                component="div"
+                className="error"
+              />
             </div>
 
             <div className="form-group">
@@ -86,7 +95,7 @@ const Booking = () => {
         )}
       </Formik>
     </div>
-  )
-}
+  );
+};
 
-export default Booking
+export default Booking;

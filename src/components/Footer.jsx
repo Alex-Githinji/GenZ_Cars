@@ -5,22 +5,24 @@ import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 
-
-
 function Footer() {
   return (
     <footer className="footer-container">
       <div className="footer">
         <p>&copy; 2024 GenZ Cars All rights are reserved</p>
         <div className="icons">
-            <a className="Twitter "><FaTwitter /> </a>
-            <a className="instagram"><FaInstagram /> </a>
-            <a className="youtube"><FaYoutube /></a>
-
+          <a className="Twitter ">
+            <FaTwitter />{" "}
+          </a>
+          <a className="instagram">
+            <FaInstagram />{" "}
+          </a>
+          <a className="youtube">
+            <FaYoutube />
+          </a>
         </div>
-
       </div>
-      
+
       <div className="footer-content">
         <label htmlFor>subsciribe to our newsletter</label>
         <input
