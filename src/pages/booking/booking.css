@@ -1,11 +1,22 @@
+.form-booking{
+    display: flex;
+    border: solid red 2px;
+    gap: 4rem;
+    padding: 4rem;
+    margin-top: 11rem;
+   
+}
+
 .form-container {
-  max-width: 500px;
-  margin: 50px auto;
+  min-width: 500px;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #f9f9f9;
+  background-color: #EBF4F6;
+  width: 40%;
+  color: #071952;
+  /* border: solid red 2px; */
 }
 
 .form-container h2 {
@@ -45,7 +56,7 @@
 button {
   padding: 10px;
   color: #fff;
-  background-color: #007bff;
+  background-color: #071952;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -60,4 +71,30 @@ button:hover {
 button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
+}
+
+.image1 img{
+    width: 80%;
+    height: 80%;
+}
+
+@media screen and (max-width: 1390px) {
+    .image img{
+        width: 100%;
+        height: 100%;
+        }
+
+        .form-booking{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-container{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+        }
+    
 }

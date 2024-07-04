@@ -8,6 +8,7 @@
   margin: 20px 0;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 11em;
 }
 
 .vehicles-banner h3 {
@@ -16,6 +17,8 @@
   line-height: 1.6;
   margin: 0;
   font-weight: 400;
+  /* margin-top: 10rem; */
+  
 }
 
 @media (min-width: 768px) {
@@ -40,7 +43,7 @@
 
 .vehicle-card {
   width: 350px;
-  background-color: #ffffff;
+  background-color: #EBF4F6;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);

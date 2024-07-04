@@ -5,12 +5,20 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+
+}
+
+.section1-header1 {
+  margin-bottom: 50px;
+  text-align: center;
+  margin-top: 15em;
 }
 
 .section1 {
   position: relative;
   z-index: 3;
   padding-bottom: 50px;
+
 }
 
 .container1 {
@@ -23,10 +31,7 @@
   background-color: #ebf4f6;
 }
 
-.section1-header1 {
-  margin-bottom: 50px;
-  text-align: center;
-}
+
 
 .section1-header1 h2 {
   color: #373a40;

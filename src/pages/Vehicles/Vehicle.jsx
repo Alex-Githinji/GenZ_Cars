@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./vehicles.css";
+import Booking from "../booking/Booking";
 
 export const Vehicle = ({ image, type, model, description, price }) => {
   return (
@@ -17,7 +18,7 @@ export const Vehicle = ({ image, type, model, description, price }) => {
 
         <p>{description}</p>
         <p className="vehicle-price">{price}</p>
-        <button className="vehicle-button">book</button>
+        <button className="vehicle-button" onClick={Booking}>book</button>
       </div>
     </div>
   );
