@@ -1,6 +1,5 @@
 .form-booking{
     display: flex;
-    border: solid red 2px;
     gap: 4rem;
     padding: 4rem;
     margin-top: 11rem;
@@ -8,7 +7,7 @@
 }
 
 .form-container {
-  min-width: 500px;
+  min-width: 480px;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 10px;
@@ -16,7 +15,7 @@
   background-color: #EBF4F6;
   width: 40%;
   color: #071952;
-  /* border: solid red 2px; */
+ 
 }
 
 .form-container h2 {
@@ -62,6 +61,7 @@ button {
   cursor: pointer;
   font-size: 1em;
   transition: background-color 0.3s ease;
+  margin-top: 55px;
 }
 
 button:hover {
@@ -76,6 +76,9 @@ button:disabled {
 .image1 img{
     width: 80%;
     height: 80%;
+    margin-left: 10%;
+    margin-top: 7%;
+    border-radius: 15px;
 }
 
 @media screen and (max-width: 1390px) {

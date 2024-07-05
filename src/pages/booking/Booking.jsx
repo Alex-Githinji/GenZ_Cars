@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import "./booking.css"
 import { Formik, Form, Field,ErrorMessage } from 'formik'
-import * as Yup from 'yup'
+
 import home from "../../assets/home.jpg"
 
 
@@ -28,7 +28,7 @@ const validate = values => {
   } else if (!/^\d{10}$/i.test(values.phone)) {
     errors.phone = 'Phone number must be 10 digits';
   }
-
+   
   return errors;
 };
 
@@ -67,6 +67,18 @@ const Booking = () => {
           </div>
 
           <div className="form-group">
+              <label htmlFor="pickUpDate">Pick-Up Date</label>
+              <Field type="date" name="pickUpDate" />
+              <ErrorMessage name="pickUpDate" component="div" className="error" />
+            </div>
+
+          <div className="form-group">
+              <label htmlFor="dropOffDate">Drop-Off Date</label>
+              <Field type="date" name="dropOffDate" />
+              <ErrorMessage name="dropOffDate" component="div" className="error" />
+            </div>
+
+          {/* <div className="form-group">
             <label htmlFor="vehicle">Vehicle</label>
             <Field as="select" name="vehicle">
               <option value="">Select a vehicle</option>
@@ -76,7 +88,7 @@ const Booking = () => {
               <option value="Toyota RAV4">Toyota RAV4</option>
             </Field>
             <ErrorMessage name="vehicle" component="div" className="error" />
-          </div>
+          </div> */}
 
           <button type="submit" disabled={isSubmitting}>
             Submit
